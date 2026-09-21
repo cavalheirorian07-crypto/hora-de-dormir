@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hora de Dormir | Pijamas & Moda Feminina</title>
+<meta name="description" content="Hora de Dormir — Pijamas & Moda Feminina em Curitiba, Paraná.">
+<style>
+:root{
+  --rose:#a85b72; --rose-dark:#7e3f53; --gold:#c8a45d; --gold-light:#ead7a6; --cream:#fbf6f1; --beige:#eadbd0;
+  --ink:#342b2e; --muted:#76696d; --white:#fff; --shadow:0 18px 50px rgba(68,39,47,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(251,246,241,.94);backdrop-filter:blur(14px);border-bottom:1px solid #eaded7}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}
+.brand-mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),#a77d35);color:#fff;font-size:20px;box-shadow:0 6px 16px rgba(168,128,50,.22)}
+nav{display:flex;gap:26px;color:var(--muted);font-size:14px}
+nav a:hover{color:var(--rose-dark)}
+.hero{padding:92px 0 72px;background:
+ radial-gradient(circle at 82% 18%,rgba(168,91,114,.18),transparent 28%),
+ linear-gradient(135deg,#fffaf6 0%,#f5e9e1 100%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:58px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--gold);font-weight:800;font-size:12px}
+h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,72px);line-height:1.02;margin:14px 0 20px;color:#3d2a30}
+.hero p{font-size:18px;color:var(--muted);max-width:610px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:13px 19px;border-radius:999px;font-weight:750;border:1px solid transparent;display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:linear-gradient(135deg,var(--rose),var(--rose-dark));color:white;box-shadow:0 10px 25px rgba(168,91,114,.25)}
+.btn-secondary{border-color:#d9c5c8;background:white}
+.hero-card{min-height:390px;border-radius:30px;overflow:hidden;box-shadow:var(--shadow);position:relative;background:#dfc9c3}
+.hero-card img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-card .caption{position:absolute;left:20px;right:20px;bottom:20px;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.88);backdrop-filter:blur(8px)}
+section{padding:82px 0}
+.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:34px}
+.section-head h2{font-family:Georgia,serif;font-size:38px;line-height:1.1}
+.section-head p{max-width:540px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #eee2dc;border-radius:22px;padding:24px;box-shadow:0 8px 28px rgba(68,39,47,.05)}
+.card .icon{font-size:26px;margin-bottom:12px}
+.card h3{font-size:16px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:14px}
+.rating{background:linear-gradient(145deg,#3d2a30,#65444d);color:white;border:1px solid rgba(200,164,93,.55)}
+.rating strong{font-size:44px;line-height:1}
+.stars{color:var(--gold);letter-spacing:2px;margin:8px 0}
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
+.info-list{display:grid;gap:12px}
+.info{padding:17px 18px;border-radius:16px;background:var(--cream);border:1px solid #eee0d9}
+.info b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--rose-dark);margin-bottom:3px}
+.info span{color:var(--muted)}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.badge{background:linear-gradient(135deg,#f5ead0,#ead7a6);color:#735a25;padding:9px 12px;border-radius:999px;font-size:13px;font-weight:700}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:190px;gap:14px}
+.gallery figure{overflow:hidden;border-radius:20px;background:#eadbd0}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery .big{grid-row:span 2}
+.reviews{background:linear-gradient(135deg,#fff,#f4e8e2)}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review{background:white;border-radius:20px;padding:22px;box-shadow:0 8px 26px rgba(68,39,47,.06)}
+.review .stars{font-size:13px}
+.review small{color:#9a8b8e}
+.cta{background:linear-gradient(135deg,var(--rose-dark),#5b3542);color:white;border:1px solid rgba(234,215,166,.45);border-radius:32px;padding:52px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.cta p{color:#f0dfe4;max-width:650px}
+.cta .btn{background:white;color:var(--rose-dark)}
+footer{padding:32px 0;color:var(--muted);font-size:13px}
+.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){
+ nav{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}
+ .cards{grid-template-columns:repeat(2,1fr)}.review-grid{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.gallery .big{grid-column:span 2}
+ .cta{padding:34px;flex-direction:column;align-items:flex-start}
+}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery .big{grid-column:auto}}
+</style>
+<style>
+.clickable-info{cursor:pointer;transition:.25s transform,.25s box-shadow,.25s border-color}
+.clickable-info:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(68,39,47,.08);border-color:#c8a45d}
+.info-detail{display:none;margin-top:9px;padding-top:9px;border-top:1px solid #e8d8c8}
+.clickable-info.open .info-detail{display:block}
+.info-link{color:#8a5c25;font-weight:750;text-decoration:underline;text-underline-offset:3px}
+.info-hint{font-size:11px;color:#a18f94;margin-top:6px}
+.contact-mini{display:inline-flex;gap:7px;align-items:center;margin-top:6px}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#"><span class="brand-mark">☾</span><span>Hora de Dormir</span></a>
+    <nav><a href="#sobre">Sobre</a><a href="#galeria">Galeria</a><a href="#avaliacoes">Avaliações</a><a href="#contato">Contato</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">✦ Pijamas & Moda Feminina · Curitiba</div>
+      <h1>Conforto que combina com você.</h1>
+      <p>Uma experiência acolhedora para quem busca pijamas e moda feminina, com atendimento na loja, retirada e entrega.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+554132648601">☎ Ligar agora</a>
+        <a class="btn btn-secondary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=R.%20Augusto%20Stresser%2C%201455%20-%20Lj%202%20-%20Hugo%20Lange%2C%20Curitiba%20-%20PR">📍 Ver no mapa</a>
+        <a class="btn btn-secondary" target="_blank" href="https://hora.de.dormir">🌐 Site oficial</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm9tqJufLp3fr0tT9zY-SJuPpv3G5ZuX_HL_mB9niWs4_PgpwhA_YJuPiPcmGTVmYm6iSSxECil3Y6ZcgQ9unByZQ1ebRK1iMkYq4Zg1Xa1woP1ttqtnwVYEfqlDluBpizZqxLP6Q=w529-h298-k-no" alt="Foto da loja Hora de Dormir">
+      <div class="caption"><strong>Hora de Dormir</strong><br><span>Hugo Lange · Curitiba, PR</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">✦ Informações</div><h2>Tudo em um só lugar</h2></div><p>Dados apresentados de forma clara para facilitar a localização, o contato e o conhecimento da loja.</p></div>
+  <div class="cards">
+    <article class="card rating"><div class="icon">★</div><strong>Nota média</strong><div style="margin-top:8px"><strong style="font-size:44px">4,9</strong><span>/ 5</span></div><div class="stars">★★★★★</div><p style="color:#eadde0">35 avaliações</p></article>
+    <article class="card clickable-info" onclick="toggleInfo(this)"><div class="icon">🛍️</div><h3>Compras na loja</h3><p>Atendimento presencial para conhecer os produtos.</p><div class="info-detail">Visite a loja no endereço informado e conheça a coleção presencialmente.</div><div class="info-hint">Clique para saber mais</div></article>
+    <article class="card clickable-info" onclick="toggleInfo(this)"><div class="icon">📦</div><h3>Retirada na loja</h3><p>Opção de retirada para pedidos feitos pela loja.</p><div class="info-detail">O perfil da empresa informa a opção de retirada na loja.</div><div class="info-hint">Clique para saber mais</div></article>
+    <article class="card clickable-info" onclick="toggleInfo(this)"><div class="icon">🚚</div><h3>Entrega</h3><p>Serviço de entrega informado no perfil da empresa.</p><div class="info-detail">O perfil da empresa informa serviço de entrega.</div><div class="info-hint">Clique para saber mais</div></article>
+  </div>
+</div>
+</section>
+
+<section class="about">
+<div class="container about-grid">
+  <div>
+    <div class="eyebrow">Sobre a loja</div>
+    <h2 style="font-family:Georgia,serif;font-size:40px;line-height:1.1;margin:10px 0 18px">Moda feminina com uma identidade acolhedora.</h2>
+    <p style="color:var(--muted)">A Hora de Dormir Pijamas & Moda Feminina está localizada no bairro Hugo Lange, em Curitiba. O perfil informa atendimento presencial, retirada e entrega.</p>
+    <div class="badges"><span class="badge">LGBTQ+ friendly</span><span class="badge">Empreendedoras</span><span class="badge">Moda feminina</span></div>
+  </div>
+  <div class="info-list">
+    <div class="info clickable-info" onclick="toggleInfo(this)">
+      <b>📍 Endereço</b><span>R. Augusto Stresser, 1455 - Lj 2 - Hugo Lange, Curitiba - PR, 80040-310</span>
+      <div class="info-detail"><a class="info-link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=R.%20Augusto%20Stresser%2C%201455%20-%20Lj%202%20-%20Hugo%20Lange%2C%20Curitiba%20-%20PR">Abrir endereço no Google Maps →</a></div>
+      <div class="info-hint">Clique para ver as opções</div>
+    </div>
+    <div class="info clickable-info" onclick="toggleInfo(this)">
+      <b>☎ Telefone</b><span>(41) 3264-8601</span>
+      <div class="info-detail"><a class="info-link" href="tel:+554132648601">Ligar para a loja →</a></div>
+      <div class="info-hint">Clique para abrir o telefone</div>
+    </div>
+    <div class="info clickable-info" onclick="toggleInfo(this)">
+      <b>🕘 Horário informado</b><span>Fechado no momento · abre terça-feira às 09:00</span>
+      <div class="info-detail"><span>Confira o horário atual antes de sair, pois os horários podem mudar.</span></div>
+      <div class="info-hint">Clique para ver mais</div>
+    </div>
+    <div class="info clickable-info" onclick="toggleInfo(this)">
+      <b>🌐 Site</b><span>lojahoradedormir.com.br</span>
+      <div class="info-detail"><a class="info-link" target="_blank" rel="noopener" href="https://hora.de.dormir">Visitar o site oficial →</a></div>
+      <div class="info-hint">Clique para abrir o site</div>
+    </div>
+    <div class="info clickable-info" onclick="toggleInfo(this)">
+      <b>🗺️ Referência no mapa</b><span>HQM3+32 Hugo Lange, Curitiba - PR</span>
+      <div class="info-detail"><a class="info-link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=HQM3%2B32%20Hugo%20Lange%2C%20Curitiba%20-%20PR">Abrir referência no Maps →</a></div>
+      <div class="info-hint">Clique para abrir no mapa</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="galeria">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">✦ Visual</div><h2>Galeria da loja</h2></div><p>Uma apresentação visual com fotos do perfil fornecido.</p></div>
+  <div class="gallery">
+    <figure class="big"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm9tqJufLp3fr0tT9zY-SJuPpv3G5ZuX_HL_mB9niWs4_PgpwhA_YJuPiPcmGTVmYm6iSSxECil3Y6ZcgQ9unByZQ1ebRK1iMkYq4Zg1Xa1woP1ttqtnwVYEfqlDluBpizZqxLP6Q=w529-h298-k-no" alt="Foto da loja"></figure>
+    <figure><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmPOZYRojPqrstWyOGFcoltK9IpuBlcv5jdXI0cqytzdjHv0l0ufDAxyD2hMkwNNigzfp_fRfJEa0Rg8XnQoikzwJI-5Pf-3wONkBjfCmP-HAzvPwjID_adcN74xmZd627FMm6KdT18Yp7d=w224-h398-k-no" alt="Foto recente"></figure>
+    <figure><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlIRxaDm1Kwk_TU4-kNF6b9-uhACrVfg8mVu185CF4lJxNeTix-gV-eurR2zaebU1x4yKoxCrmZbrIvAtlUivtA3r9KcqMI9Gd4hVY0N20LH_fnlj_6GWtS2i7v56zG4fOlgAU=w224-h298-k-no" alt="Interior"></figure>
+    <figure><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlqE_jiNSQVJYIQfvUFlVXjqkqOY44eMwLr9CD1n2sfrmrTQaZ2sNoiAK7-eTygHkdLqaXAECFj4AXdmoaEova3mbxn5ZBMV1GBpsPqEy4c1GcoyV_Snb8ODa8ysEQXjRvsEIKM=w224-h336-k-no" alt="Vestido"></figure>
+    <figure><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlHGiuBkD7wj-F9rolvSpmsyYxIyBOwpN8ZWv7EX57bo5CD7ggHHgyDe0YGuLDDNk5pG1Bz--57SgNZAYAkcaXqKCtNL4IRn6hemfFGpWKCMUwkBTn7inGvjDI-l6WNnkhMwlA=w224-h359-k-no" alt="Foto do proprietário"></figure>
+  </div>
+</div>
+</section>
+
+<section id="avaliacoes" class="reviews">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">✦ Reputação</div><h2>4,9 estrelas</h2></div><p>O perfil fornecido informa 35 avaliações. Os links abaixo levam às páginas do Google Maps compartilhadas.</p></div>
+  <div class="review-grid">
+    <article class="review"><div class="stars">★★★★★</div><h3>35 avaliações</h3><small>Nota média informada no perfil</small></article>
+    <article class="review"><div class="stars">★★★★★</div><h3>Experiência de compra</h3><small>Consulte as avaliações completas no Google Maps</small></article>
+    <article class="review"><div class="stars">★★★★★</div><h3>Perfil da loja</h3><small>Fotos, avaliações e informações reunidas nesta página</small></article>
+  </div>
+  <div class="actions" style="margin-top:24px">
+    <a class="btn btn-secondary" target="_blank" href="https://maps.app.goo.gl/RXzHRFQLZimFEPVD6">Avaliação no Maps 1</a>
+    <a class="btn btn-secondary" target="_blank" href="https://maps.app.goo.gl/8KbRVQzRf9VD6FND7">Avaliação no Maps 2</a>
+    <a class="btn btn-secondary" target="_blank" href="https://maps.app.goo.gl/NR5YD7QoAjrqBtJQ8">Avaliação no Maps 3</a>
+    <a class="btn btn-secondary" target="_blank" href="https://maps.app.goo.gl/2EEQEJizxRLETndYA">Avaliação no Maps 4</a>
+  </div>
+</div>
+</section>
+
+<section id="contato">
+<div class="container">
+  <div class="cta">
+    <div><div class="eyebrow" style="color:#ead7a6">✦ Visite ou entre em contato</div><h2 style="font-family:Georgia,serif;font-size:38px;margin:8px 0">Hora de Dormir</h2><p>R. Augusto Stresser, 1455 - Lj 2 · Hugo Lange · Curitiba - PR · CEP 80040-310</p></div>
+    <a class="btn" href="tel:+554132648601">☎ (41) 3264-8601</a>
+  </div>
+</div>
+</section>
+</main>
+
+<footer><div class="container footer-grid"><span>© Hora de Dormir Pijamas & Moda Feminina</span><span>Curitiba · Paraná · Brasil</span></div></footer>
+<script>
+function toggleInfo(el){
+  el.classList.toggle('open');
+}
+</script>
+</body>
+</html>
